@@ -1,0 +1,52 @@
+/* styles / index.css */
+
+@tailwind base;
+
+@layer base {
+  body {
+    @apply font-mono;
+    @apply text-gray-300;
+    @apply bg-gray-900;
+    @apply tracking-tightest;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  button,
+  a {
+    @apply text-white;
+  }
+  a {
+    @apply transition-colors hover:text-blue-500 hover:underline;
+  }
+}
+
+@tailwind components;
+
+@tailwind utilities;
+
+@import url("./fonts/silkamono.css");
+
+html {
+  font-size: 18px;
+}
+
+.bg-theme-dark {
+  background-image: linear-gradient(
+    135deg,
+    rgba(23, 23, 23, 1) 65%,
+    rgba(128, 255, 219, 0.8) 70%,
+    rgba(114, 239, 221, 1) 73%,
+    rgba(100, 223, 223, 1) 76%,
+    rgba(86, 207, 225, 1) 79%,
+    rgba(72, 191, 227, 1) 82%,
+    rgba(78, 168, 222, 1) 85%,
+    rgba(83, 144, 217, 1) 88%,
+    rgba(94, 96, 206, 1) 91%,
+    rgba(105, 48, 195, 1) 94%,
+    rgba(116, 0, 184, 1) 97%
+  );
+}
