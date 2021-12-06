@@ -44,17 +44,17 @@ export default function Work(props) {
 
   return (
     <AnimatePresence exitBeforeEnter>
-      <motion.div
+      <motion.section
         id="work"
         key="work"
         className="grid justify-items-start border-b"
         transition={{layout: { duration: 0.4 }}}
         layout
         >
-        <div className="px-6 mt-2 lg:mt-10 md:px-8 lg:px-16 py-4 space-y-4 max-w-7xl mx-auto">
+        <div className="px-6 my-6 lg:mt-10 md:px-8 lg:px-16 py-4 space-y-4 max-w-7xl mx-auto">
           <div className="flex space-y-4 flex-col md:flex-row md:space-y-0">
             {/* Work Section -- Heading */}
-            <motion.h2 layout className="text-3xl md:text-4xl lg:text-5xl font-bold leading-7 tracking-tightes">Projects</motion.h2>
+            <motion.h2 layout className="text-3xl md:text-4xl lg:text-5xl font-bold leading-7 tracking-tightest">Projects</motion.h2>
 
             {/* Tab Buttons */}
             <motion.div key="buttons" layout className="text-center space-x-6 mx-auto">
@@ -278,7 +278,7 @@ export default function Work(props) {
           </AnimatePresence>
 
         </div>
-      </motion.div>
+      </motion.section>
     </AnimatePresence>
   )
 }

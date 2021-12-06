@@ -14,7 +14,7 @@ export default function Welcome() {
   return (
     <section
       id="welcome"
-      className="block border-b px-6 sm:px-8 lg:flex lg:w-full lg:items-center lg:justify-between lg:gap-12"
+      className="block border-b my-4 px-6 sm:px-8 lg:flex lg:w-full lg:items-center lg:justify-between lg:gap-12"
     >
       <div className="h-7"/>
       {/* // Header text */}
