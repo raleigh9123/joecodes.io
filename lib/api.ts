@@ -2,7 +2,7 @@ import fs from 'fs'
 import { join } from 'path'
 import { getPlaiceholder } from 'plaiceholder';
 import matter from 'gray-matter'
-import remark from 'remark'
+import { remark } from 'remark'
 import html from 'remark-html'
 
 interface Post {
@@ -90,10 +90,10 @@ export async function getPost(slug: string, fields = [], type: string) {
   return items
 }
 
-// export async function markdownToHtml(markdown) {
-//   const result = await remark().use(html).process(markdown)
-//   return result.toString()
-// }
+export async function markdownToHtml(markdown) {
+  const result = await remark().use(html).process(markdown)
+  return result.toString()
+}
 
 export function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
