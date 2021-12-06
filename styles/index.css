@@ -1,7 +1,6 @@
 /* styles / index.css */
 
 @tailwind base;
-@tailwind components;
 
 @layer base {
   body {
@@ -24,6 +23,10 @@
     @apply transition-colors hover:text-blue-500 hover:underline;
   }
 }
+
+@tailwind components;
+
+@tailwind utilities;
 
 @import url("./fonts/silkamono.css");
 

@@ -14,7 +14,7 @@ export default function Welcome() {
   return (
     <section
       id="welcome"
-      className="block border-b my-4 px-6 sm:px-8 lg:flex lg:w-full lg:items-center lg:justify-between lg:gap-12"
+      className="block border-b px-6 sm:px-8 lg:flex lg:w-full lg:items-center lg:justify-between lg:gap-12"
     >
       <div className="h-7"/>
       {/* // Header text */}
@@ -55,8 +55,8 @@ export default function Welcome() {
       </motion.div>
       {/* // Image */}
       <div className="bg-blue-500 lg:bg-transparent relative p-4 sm:p-8 -mx-6 sm:-mx-8 md:p-10 lg:p-8 mt-6 lg:mt-0 lg:w-1/2 lg:max-h-xl overflow-hidden lg:rounded-l-2xl">
-        <div className="hidden lg:inline absolute bg-theme-dark w-full h-full -mx-8 -my-8" />
-        <div className="relative flex flex-wrap lg:flex-nowrap lg:flex-col items-center bg-gray-800 rounded-xl lg:w-96 lg:mx-auto">
+        <div className="hidden lg:inline absolute w-full h-full -mx-8 -my-8" />
+        <div className="relative flex flex-wrap lg:flex-nowrap lg:flex-col items-center bg-gray-800 rounded-xl lg:w-96">
           <motion.div
             className="flex-full sm:flex-half lg:flex-full lg:w-96 lg:max-h-80 overflow-hidden"
             initial={{x:100, opacity:0}}
