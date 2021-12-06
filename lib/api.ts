@@ -90,10 +90,10 @@ export async function getPost(slug: string, fields = [], type: string) {
   return items
 }
 
-export async function markdownToHtml(markdown) {
-  const result = await remark().use(html).process(markdown)
-  return result.toString()
-}
+// export async function markdownToHtml(markdown) {
+//   const result = await remark().use(html).process(markdown)
+//   return result.toString()
+// }
 
 export function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
