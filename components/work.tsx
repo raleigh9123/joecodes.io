@@ -1,5 +1,5 @@
-// pages / index.tsx
-// --> PAGE <-
+// pages / work.tsx
+// --> COMPONENT <-
 
 // Node Modules Imports
 import Link from 'next/link'
@@ -18,7 +18,7 @@ function classNames(...classes) {
 export default function Work(props) {
   const { allJobs, allProjects }: WorkData = props.data
   // activeTab is an array of the the current array of posts and the index [currentPosts, index]
-  const [ [posts, activeTab], setActiveArray ] = useState([allJobs, 'Live Work'])
+  const [[posts, activeTab], setActiveArray] = useState([allJobs, 'Live Work'])
 
   const parent = {
     hidden: {
@@ -26,13 +26,13 @@ export default function Work(props) {
       transition: {
         when: "afterChildren",
         staggerChildren: 0.01,
-        duration:0.05,
+        duration: 0.05,
       }
     },
     visible: {
       opacity: 1,
       transition: {
-        duration:0.1,
+        duration: 0.1,
         staggerChildren: 0.1
       }
     }
@@ -48,10 +48,10 @@ export default function Work(props) {
         id="work"
         key="work"
         className="grid justify-items-start border-b"
-        transition={{layout: { duration: 0.4 }}}
+        transition={{ layout: { duration: 0.4 } }}
         layout
-        >
-        <div className="px-6 my-6 lg:mt-10 md:px-8 lg:px-16 py-4 space-y-4 max-w-7xl mx-auto">
+      >
+        <div className="px-6 my-6 md:my-12 lg:mt-10 md:px-16 lg:px-16 py-4 space-y-4 max-w-7xl mx-auto">
           <div className="flex space-y-4 flex-col md:flex-row md:space-y-0">
             {/* Work Section -- Heading */}
             <motion.h2 layout className="text-3xl md:text-4xl lg:text-5xl font-bold leading-7 tracking-tightest">Projects</motion.h2>
@@ -61,17 +61,17 @@ export default function Work(props) {
               <button
                 onClick={() => setActiveArray([allJobs, 'Live Work'])}
                 className={classNames(
-                'border px-3 sm:px-8 py-2 text-md transition-colors duration-300',
-                activeTab === 'Live Work' ? 'bg-violet-600 cursor-default '
-                : 'border-white hover:bg-white hover:text-black'
+                  'border px-3 sm:px-8 py-2 text-md transition-colors duration-300',
+                  activeTab === 'Live Work' ? 'bg-violet-600 cursor-default '
+                    : 'border-white hover:bg-white hover:text-black'
                 )}
               >Live Work</button>
               <button
                 onClick={() => setActiveArray([allProjects, 'Treehouse-Projects'])}
                 className={classNames(
-                'border px-3 sm:px-8 py-2 text-md transition-colors duration-300',
-                activeTab === 'Treehouse-Projects' ? 'bg-green-600 cursor-default'
-                : 'border-white hover:bg-white hover:text-black'
+                  'border px-3 sm:px-8 py-2 text-md transition-colors duration-300',
+                  activeTab === 'Treehouse-Projects' ? 'bg-green-600 cursor-default'
+                    : 'border-white hover:bg-white hover:text-black'
                 )}
               >TreeHouse</button>
             </motion.div>
@@ -88,7 +88,7 @@ export default function Work(props) {
               className={classNames(activeTab === 'Live Work'
                 ? "gap-8"
                 : "lg:grid-cols-2 gap-x-8 xl:gap-x-24"
-                ,"sm:mb-0 sm:grid gap-y-2 md:gap-y-4 xl:gap-y-12 lg:col-span-2"
+                , "sm:mb-0 sm:grid gap-y-2 md:gap-y-4 xl:gap-y-12 lg:col-span-2"
               )}
             >
 
@@ -98,7 +98,7 @@ export default function Work(props) {
                   className="lg:col-span-2"
                   variants={child}
                   layout
-                  >
+                >
                   <p className="border-r-2 border-l-2 px-8 w-full border-violet-600 lg:w-3/4 text-sm md:text-base">
                     <span className="block pb-2">My work is divided into live projects, and projects that I completed for my Treehouse Techdegree.</span>
                     The summary desccription for this website, <span className="text-blue-500 underline">joecodes.io</span>, is listed below under the "Live Work" tab of this section. Follow the Github link to see the code.
@@ -110,7 +110,7 @@ export default function Work(props) {
                   className="lg:col-span-2"
                   variants={child}
                   layout
-                  >
+                >
                   <p className="border-r-2 border-l-2 px-8 w-full border-green-600 lg:w-3/4 text-sm md:text-base">
                     The&nbsp;
                     <Link href="https://teamtreehouse.com/">
@@ -122,7 +122,7 @@ export default function Work(props) {
                     </Link>, or view select projects from the program below.
                   </p>
                 </motion.div>
-              ) }
+              )}
               {posts.map(({ title, subline, excerpt, type, technologies, slug, githubURL, demoURL, projectCompleted, coverImage }, index) => {
                 return (
                   <motion.div
@@ -131,14 +131,14 @@ export default function Work(props) {
                     className={classNames(activeTab === 'Live Work'
                       ? "lg:col-span-2"
                       : "gap-x-8"
-                      ,"border flex flex-col rounded-sm space-y-1 col-auto")}
-                    >
+                      , "border flex flex-col rounded-sm space-y-1 col-auto")}
+                  >
                     {activeTab === 'Treehouse-Projects' && (
                       <div>
                         {/* Title, Category, Subline, and Links */}
                         <div className="relative h-56">
                           <div className="relative py-8 px-6 space-y-6">
-                              <h4 className="text-xl md:text-3xl lg:text-4xl font-semibold">{title}</h4>
+                            <h4 className="text-xl md:text-3xl lg:text-4xl font-semibold">{title}</h4>
                             <div className="flex items-center">
                               <h5 className="font-normal leading-6">{subline}</h5>
                               <p className={classNames(
@@ -152,22 +152,22 @@ export default function Work(props) {
                               <Link href={githubURL}>
                                 <a
                                   className="border font-semibold px-3 sm:px-8 py-2 transition-colors duration-200 border-white hover:bg-white hover:text-black hover:no-underline"
-                                  >Github
+                                >Github
                                 </a>
                               </Link>
                               {demoURL && (
-                                <Link href={demoURL ? demoURL: '/'}>
+                                <Link href={demoURL ? demoURL : '/'}>
                                   <a
                                     className="border font-semibold px-3 sm:px-8 py-2 transition-colors duration-200 border-white hover:bg-white hover:text-black"
                                     target="_blank"
-                                    >Demo
+                                  >Demo
                                   </a>
                                 </Link>
                               )}
                               <Link href={`/projects/${slug}`}>
                                 <a
                                   className="border font-semibold px-3 sm:px-8 py-2 transition-colors duration-200 border-white hover:bg-white hover:text-black hover:no-underline"
-                                  >Summary <LogoutCustomIcon/>
+                                >Summary <LogoutCustomIcon />
                                 </a>
                               </Link>
                             </div>
@@ -197,7 +197,7 @@ export default function Work(props) {
                           <div className="space-y-4 mt-4">
                             <h5 className="sr-only">Technologies</h5>
                             <ul className="flex flex-wrap space-x-2">
-                              {technologies.map((tech, index) => <li key={`${tech}-${index}`} className="rounded-xl bg-white text-black p-1 my-1 text-sm">{tech}</li> )}
+                              {technologies.map((tech, index) => <li key={`${tech}-${index}`} className="rounded-xl bg-white text-black p-1 my-1 text-sm">{tech}</li>)}
                             </ul>
                           </div>
                         </div>
@@ -225,14 +225,14 @@ export default function Work(props) {
                                 <a
                                   className="border rounded-md font-semibold px-3 sm:px-8 py-2 transition-colors duration-200 border-white hover:bg-white hover:text-black"
                                   target="_blank"
-                                  >Live URL
+                                >Live URL
                                 </a>
                               </Link>
                             )}
                             <Link href={`/jobs/${slug}`}>
                               <a
                                 className="border rounded-md font-semibold px-3 sm:px-8 py-2 transition-colors duration-200 border-white hover:bg-white hover:text-black hover:no-underline"
-                                >Summary <LogoutCustomIcon/>
+                              >Summary <LogoutCustomIcon />
                               </a>
                             </Link>
                           </div>
@@ -241,11 +241,11 @@ export default function Work(props) {
                         <div className="p-2 sm:px-8 lg:p-8 space-y-4 lg:pb-8">
                           <h5 className="text-lg font-semibold">Overview</h5>
                           <p className="">{excerpt}</p>
-                          { projectCompleted.isComplete
+                          {projectCompleted.isComplete
                             ? <p className="font-semibold ml-auto ">Status: <span className="font-extralight">Completed {projectCompleted?.completionDate!}</span></p>
                             : <p className="font-semibold ml-auto ">Project Under Construction</p>}
                         </div>
-                          {/* Image and Tech */}
+                        {/* Image and Tech */}
                         <div className="row-start-2 lg:col-start-2 h-auto flex items-center flex-col">
                           <div className="h-72 sm:px-8 md:px-16 lg:px-0 w-full lg:mt-8 lg:w-4/5 lg:h-4/5 mx-auto">
                             <div className="relative h-full">
@@ -265,7 +265,7 @@ export default function Work(props) {
                           <div className="p-2 sm:p-8">
                             <h5 className="sr-only">Technologies</h5>
                             <ul className="flex flex-wrap justify-center md:justify-start space-x-1 space-y-1 md:space-x-4">
-                              {technologies.map((tech, index) => <li key={`${tech}-${index}`} className="rounded-xl bg-white text-black p-1 my-1 text-sm">{tech}</li> )}
+                              {technologies.map((tech, index) => <li key={`${tech}-${index}`} className="rounded-xl bg-white text-black p-1 my-1 text-sm">{tech}</li>)}
                             </ul>
                           </div>
                         </div>

@@ -10,6 +10,7 @@ import Layout from '../components/layout/layout'
 // Data Imports
 import { getAllPosts } from '../lib/api'
 import Welcome from '../components/welcome'
+import Welcome2 from '../components/welcome2'
 import Work from '../components/work'
 import About from '../components/about'
 // import Uses from '../components/uses'
@@ -20,7 +21,7 @@ export interface Post {
   subline?: string
   excerpt?: string
   type?: string
-  projectCompleted?: {isComplete: Boolean, completionDate: string}
+  projectCompleted?: { isComplete: Boolean, completionDate: string }
   technologies?: string[]
   secondaryTechnologies?: string[],
   githubURL?: string
@@ -34,9 +35,9 @@ export interface WorkData {
   allProjects: Post[]
 }
 
-export default function Index({allProjects, allJobs}) {
+export default function Index({ allProjects, allJobs }) {
 
-  const workData:WorkData = {allProjects, allJobs}
+  const workData: WorkData = { allProjects, allJobs }
 
   return (
     <>
