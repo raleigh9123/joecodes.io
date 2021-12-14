@@ -22,16 +22,15 @@ export default function Welcome() {
           animate={{ y: 0, opacity: 1, transition: { delay: 0.15, duration: 0.3 } }}
           className="lg:w-1/2 lg:mb-8"
         >
-          <div className="px-6 sm:px-8 md:px-16 space-y-4 lg:max-w-2xl lg:mx-auto lg:space-y-2 xl:space-y-8">
+          <div className="space-y-4 px-6 sm:px-8 md:px-16 lg:max-w-2xl lg:mx-auto lg:space-y-2 xl:space-y-8">
             <h1 className="mb-4 text-3xl md:text-4xl lg:text-5xl font-bold lg:font-black leading-8 tracking-tightest">Joseph Butterfield<span className="sr-only">'s Portfolio and Resume Site</span></h1>
             <p className="text-white text-xl md:text-3xl lg:text-4xl font-bold lg:font-black leading-7 lg:leading-10 tracking-tighter">
-              <span className="text-cyan-400">Full-Stack</span> web developer specializing in&nbsp;
-              <span className="text-green-500">JavaScript</span> and modern&nbsp;
-              <span className="text-yellow-400">front-end development</span>
+              <span className="text-cyan-400">Full-Stack</span> web developer specializing in
+              <span className="text-green-500"> JavaScript</span> and modern
+              <span className="text-yellow-400"> front-end development</span>
             </p>
             {/* // Description */}
-            {/* Text */}
-            <p className="text-sm md:text-base">My goal is to help clients take their business to the web by automating repetitive workflows, integrating web services, and marketing their platforms to reach a global audience. See my work below.</p>
+            <p className="text-sm md:text-base leading-6">My goal is to help clients take their business to the web by automating repetitive workflows, integrating 3rd party services, and marketing their platforms to reach a global audience.</p>
             {/* Buttons */}
             <ul className="flex flex-wrap text-center items-center gap-4 py-4">
               <li className="flex-full sm:flex-1 sm:order-last">
@@ -55,11 +54,11 @@ export default function Welcome() {
         {/* // Image */}
         <div className="px-6 sm:px-8 md:px-16 mb-4 lg:m-0 lg:p-0 relative overflow-hidden lg:w-1/2 lg:py-16">
           <div className="hidden bg-theme-dark backdrop-blur-3xl lg:inline absolute w-full h-full" />
-          <div className="relative md:flex md:items-center md:justify-between lg:flex lg:flex-wrap lg:flex-col lg:items-center lg:mx-auto lg:w-96 lg:h-full">
+          <div className="relative rounded-xl md:shadow-sm md:shadow-gray-900 md:flex md:items-center md:justify-between lg:flex lg:flex-wrap lg:flex-col lg:items-center lg:mx-auto lg:w-96 lg:h-full">
             <motion.div
-              className="w-full md:w-2/5 lg:flex-full lg:w-96 lg:max-h-80 overflow-hidden"
-              initial={{ x: 100, opacity: 0 }}
-              animate={{ x: 0, opacity: 1, transition: { delay: 0.15, duration: 0.3 } }}
+              className="w-full md:w-2/5 lg:flex-full lg:w-96 md:h-56 lg:max-h-80 overflow-hidden"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1, transition: { delay: 0.15, duration: 0.3 } }}
             >
               <Image
                 src={ProfilePicture}
@@ -82,10 +81,10 @@ export default function Welcome() {
                 <span className="text-blue-500">{' '}employmentInfo</span>
                 <span className="text-yellow-300 opacity-50"> = </span>
                 <span className="text-yellow-300">{`{`}</span>
-                <span className="block text-green-500">&emsp;status: <span className="text-gray-300">'Pursuing full-time role',</span></span>
-                <span className="block text-green-500">&emsp;roles: <span className="text-gray-300"> ['Full-Stack', 'Front-End'],</span></span>
-                <span className="block text-green-500">&emsp;experience: <span className="text-gray-300"> ['junior', 'mid'],</span></span>
-                <span className="block text-green-500">&emsp;technologies: <span className="text-gray-300"> ['JavaScript', 'TypeScript', 'Node', 'React']</span></span>
+                <span className="block text-green-500">&emsp;seekingEmployment: <span className="text-cyan-400"> true</span><span className="text-gray-400">,</span></span>
+                <span className="block text-green-500">&emsp;location: <span className="text-violet-500"> [<span className="text-gray-200">'Portland, OR', 'Seattle, WA', 'Remote'</span>],</span></span>
+                <span className="block text-green-500">&emsp;roles: <span className="text-violet-500"> [<span className="text-gray-200">'Full-Stack', 'Front-End'</span>],</span></span>
+                <span className="block text-green-500">&emsp;technologies: <span className="text-violet-500"> [<span className="text-gray-200">'JavaScript', 'TypeScript', 'Node', 'React'</span>]</span></span>
                 <span className="text-yellow-300">{`}`}</span>
                 <br />
               </span>

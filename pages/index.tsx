@@ -68,6 +68,7 @@ export async function getStaticProps() {
     'excerpt',
     'technologies',
     'demoURL',
+    'githubURL',
     'projectCompleted',
     'coverImage',
     'slug',

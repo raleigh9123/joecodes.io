@@ -29,7 +29,7 @@ module.exports = {
     },
   },
   plugins: [
-    plugin(function({ addUtilities }) {
+    plugin(function({ addUtilities, addVariant }) {
       const background = {
         ".bg-theme-dark": {
           background: `linear-gradient(

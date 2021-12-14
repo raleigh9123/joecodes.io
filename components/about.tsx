@@ -11,19 +11,20 @@ import Section from './layout/section'
 export default function About() {
   return (
     <Section ID="about">
-      <div id="about" className="block p-6 sm:px-8 md:py-12 md:px-16 lg:flex lg:w-full lg:items-center lg:justify-between lg:gap-12">
+      <div id="about" className="block p-6 sm:px-8 md:py-12 md:px-16 max-w-7xl mx-auto lg:flex lg:w-full lg:items-center lg:justify-between lg:gap-12">
         {/* // Wrapper */}
         <div className="space-y-4 md:space-y-8">
           <div className="flex">
-            <h2 className="text-3xl md:ml-auto lg:mr-8 md:text-4xl lg:text-5xl font-bold leading-7 tracking-tightest">About Me</h2>
+            <h2 className="text-3xl md:ml-auto lg:mr-8 md:text-4xl lg:text-5xl font-bold shadow-sm tracking-tightest">About Me</h2>
           </div>
-          <div className="md:mr-8 md:mb-4 w-60 md:w-80 border border-white md:float-left rounded-xl">
+          <div className="relative md:float-left h-80 md:py-52 lg:py-56 mx-auto md:mr-8 md:mb-4 w-60 md:w-80 border border-white shadow-white shadow-sm rounded-xl">
             <Image
               src={ProfilePicture2}
               alt="Second profile picture of Joseph Butterfield"
-              layout="responsive"
-              quality={15}
               className="rounded-xl"
+              layout="fill"
+              objectFit="cover"
+              objectPosition="0% 0%"
               placeholder="blur"
             />
           </div>
