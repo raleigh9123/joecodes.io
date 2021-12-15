@@ -1,8 +1,8 @@
 ---
 title: 'User Directory'
-subline: "Public API Request"
-excerpt: 'This project is a React App that loads a simple gallery of images from the Flickr API. User may search any keyword and the application will make a request to the Flickr API, interpret the response, and render images in a gallery style display.'
-order: 6
+subline: "A user directory that might be used to provide information about employees internally on a company website."
+excerpt: 'This project builds a randomly generated user directory that might be used to provide information about employees internally on a company website.'
+order: 5
 type: 'Front-End'
 technologies: ['fetch-api', 'Asynchronous Programming', 'DOM Manipulation']
 secondaryTechnologies: []

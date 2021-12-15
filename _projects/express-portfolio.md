@@ -1,8 +1,8 @@
 ---
 title: 'Express Portfolio'
-subline: "Node.js & Express Portfolio"
+subline: "A simple portfolio site I built with Node.js and Express and the Pug templating engine."
 excerpt: 'This project is a basic portfolio site built in Node.js and Express using the Pug templating package. It contains a home page, an about page, and pages for a few development projects.'
-order: 4
+order: 7
 type: 'Front-End'
 technologies: ['Node.js', 'Express', 'Pug Templating']
 secondaryTechnologies: ['nodemon']

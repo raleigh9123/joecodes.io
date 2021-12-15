@@ -4,11 +4,11 @@
 // Node Modules Imports
 import Head from 'next/head'
 
-// Component Imports
-import Layout from '../components/layout/layout'
-
 // Data Imports
 import { getAllPosts } from '../lib/api'
+
+// Component Imports
+import Layout from '../components/layout/layout'
 import Welcome from '../components/welcome'
 import Work from '../components/work'
 import About from '../components/about'

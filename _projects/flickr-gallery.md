@@ -1,8 +1,8 @@
 ---
 title: 'Flickr Gallery'
-subline: "React App"
+subline: "A simple gallery that allows users to query the Flickr API for images by any keyword."
 excerpt: 'This project is a React App that loads a simple gallery of images from the Flickr API. User may search any keyword and the application will make a request to the Flickr API, interpret the response, and render images in a gallery style display.'
-order: 5
+order: 4
 type: 'Front-End'
 technologies: ['React', 'React-Router', 'Axios']
 secondaryTechnologies: ['Flickr API']

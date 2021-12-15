@@ -1,6 +1,6 @@
 ---
 title: 'Library Manager'
-subline: "Full-Stack React App"
+subline: "Full-Stack React/Express library application that allows user to view a list of courses, create an account, login, and create, update, and delete their own courses."
 excerpt: 'This project is a library application that allows users to view a list of courses. Users are able to create an account with personal login credentials, then users may login, create courses, and update and delete their own courses.'
 order: 1
 type: 'Full-Stack'

@@ -1,6 +1,6 @@
 ---
 title: 'Library API'
-subline: "REST API"
+subline: "A REST API built with Express that configures responses to API requests for 'courses' and 'users' within a local database. "
 excerpt: "This project is a Rest API that configures responses to API requests for 'Courses' and 'Users' within a local database."
 order: 2
 type: 'Back-End'

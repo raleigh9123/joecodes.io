@@ -1,8 +1,8 @@
 ---
 title: 'Phrase Hunter'
-subline: "Object Oriented Programming"
+subline: "A 'hangman' style phrase guessing game. The objective is to guess the phrase."
 excerpt: "This is a 'hangman' style phrase guessing game. The objective is to guess the phrase."
-order: 7
+order: 6
 type: 'Front-End'
 technologies: ['Javascript Classes', 'JS Object Methods', 'Callback Functions']
 secondaryTechnologies: []

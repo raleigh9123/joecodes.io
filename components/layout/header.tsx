@@ -14,7 +14,7 @@ export default function Header() {
           </Link>
           <nav className="">
             <Link href="/resume.pdf">
-              <a className="px-3 sm:px-8 sm:mr-8 py-2 md:m-0 font-semibold text-yellow-400 hover:bg-white rounded-sm hover:text-black transition-colors duration-300" target="_blank">Resumé</a>
+              <a className="px-3 sm:px-8 sm:mr-8 py-2 md:m-0 font-semibold text-green-500 md:text-cyan-500 lg:text-yellow-500 hover:bg-white rounded-sm hover:text-black transition-colors duration-300" target="_blank">Resumé</a>
             </Link>
           </nav>
         </div>

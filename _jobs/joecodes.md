@@ -1,6 +1,6 @@
 ---
 title: 'Joe Codes'
-subline: "My portfolio website built in Next.js"
+subline: "My portfolio website built in Next.js."
 excerpt: 'My personal website is a simple Next.js app. It uses TailwindCSS v3 and Framer Motion for subtle animations. The data is sourced in Node from Markdown files using Remark and Remark-HTML.'
 order: 3
 type: 'Front-End'

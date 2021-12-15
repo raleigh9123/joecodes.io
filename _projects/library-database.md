@@ -1,6 +1,6 @@
 ---
 title: 'Library Database'
-subline: "SQL Application"
+subline: "A user-friendly database application built with SQL and the Sequelize ORM to create, read, update, and delete books in a database."
 excerpt: 'This project is a Node.js Library Database Application that provides a user friendly interface to create, read, update, and delete books in a database. Users can create new books, view all books within the database, update information on books within the database, and delete records.'
 order: 3
 type: 'Full-Stack'

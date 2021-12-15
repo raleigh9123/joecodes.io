@@ -7,15 +7,16 @@ import Image from 'next/image'
 import { motion } from 'framer-motion'
 
 // Component Imports
-import ProfilePicture from '../public/profile-picture.JPG'
 import Section from './layout/section'
+import ProfilePicture from '../public/profile-picture.JPG'
 
 
 export default function Welcome() {
   return (
     <Section ID="welcome">
-      <div className="block md:space-y-8 md:mb-8 lg:flex lg:items-center lg:-my-4">
-        <div className="hidden md:block h-7" />
+      <div className="hidden bg-theme-dark -z-10 backdrop-blur-3xl lg:inline absolute -mt-4 w-1/2 right-0 h-full" />
+      <div className="block relative md:space-y-8 md:mb-8 lg:flex lg:items-center lg:-my-4 max-w-7xl mx-auto">
+        <div className="hidden md:block h-2" />
         {/* // Header text */}
         <motion.div
           initial={{ y: -50, opacity: 0 }}
@@ -52,19 +53,19 @@ export default function Welcome() {
           </div>
         </motion.div>
         {/* // Image */}
-        <div className="px-6 sm:px-8 md:px-16 mb-4 lg:m-0 lg:p-0 relative overflow-hidden lg:w-1/2 lg:py-16">
-          <div className="hidden bg-theme-dark backdrop-blur-3xl lg:inline absolute w-full h-full" />
+        <div className="px-6 sm:px-8 md:px-16 mb-4 lg:m-0 lg:p-0 relative overflow-hidden lg:w-1/2 lg:py-16 lg:pl-16">
           <div className="relative rounded-xl md:shadow-sm md:shadow-gray-900 md:flex md:items-center md:justify-between lg:flex lg:flex-wrap lg:flex-col lg:items-center lg:mx-auto lg:w-96 lg:h-full">
             <motion.div
-              className="w-full md:w-2/5 lg:flex-full lg:w-96 md:h-56 lg:max-h-80 overflow-hidden"
+              className="relative md:w-2/5 lg:w-96 py-32 md:py-36 lg:py-40 "
               initial={{ opacity: 0 }}
               animate={{ opacity: 1, transition: { delay: 0.15, duration: 0.3 } }}
             >
               <Image
                 src={ProfilePicture}
                 alt="Profile picture of Joseph Butterfield"
-                layout="responsive"
-                objectPosition="50% 50%"
+                layout="fill"
+                objectFit="cover"
+                objectPosition="50% 40%"
                 className="rounded-tl-xl rounded-tr-xl md:rounded-bl-xl md:rounded-tl-xl md:rounded-tr-none lg:rounded-bl-none lg:rounded-tr-xl"
                 quality={96}
                 priority
@@ -73,7 +74,7 @@ export default function Welcome() {
             <motion.code
               initial={{ opacity: 0 }}
               animate={{ opacity: 1, transition: { delay: 0.3, duration: 0.3 } }}
-              className="rounded-bl-xl rounded-br-xl md:rounded-tr-xl md:rounded-bl-none lg:rounded-bl-xl lg:rounded-br-xl lg:rounded-tr-none bg-gray-800 sm:flex-half lg:flex-full self-stretch grid grid-rows-doubleAuto p-4 md:px-8 text-sm lg:text-base"
+              className="rounded-bl-xl rounded-br-xl md:rounded-tr-xl md:rounded-bl-none lg:rounded-bl-xl lg:rounded-br-xl lg:rounded-tr-none bg-gray-800 sm:flex-half lg:flex-full self-stretch grid grid-rows-doubleAuto p-4 space-y-2 md:px-8 text-sm lg:text-base"
             >
               <span className="">// employment-status.js</span>
               <span className="self-center">
